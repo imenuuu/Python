@@ -21,8 +21,6 @@ while(True):
         break
 
 
-
-
 print ("찾는 문자열의 순서 : ")
 print (sequential_search(n, target, array))
 

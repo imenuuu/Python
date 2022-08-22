@@ -1,16 +1,15 @@
 def binary_search(start, end, target, array):
-    if start > end:
-        return "None"
-    mid = (start+end) // 2
-    # 찾은 경우 중간 인덱스 반환
-    if array[mid] == target:
-        return mid
-    # 중간점의 값보다 찾고자 하는 값이 작은경우 왼쪽 확인
-    elif array[mid] > target:
-        return binary_search(start, mid-1, target, array)
-    # 중간점의 값보다 찾고자 하는 값이 큰경우 오른쪽확인
-    else :
-        return binary_search(mid+1, end, target, array)
+    while start<=end:
+        mid = (start+end) // 2
+         # 찾은 경우 중간 인덱스 반환
+        if array[mid] == target:
+            return mid
+        # 중간점의 값보다 찾고자 하는 값이 작은경우 왼쪽 확인
+        elif array[mid] > target:
+            end = mid-1
+        # 중간점의 값보다 찾고자 하는 값이 큰경우 오른쪽확인
+        else :
+            start = mid+1
 
 
 
