@@ -5,6 +5,7 @@ def sequential_search(n, target, array):
 
 
 print("생성할 원소 개수를 임력한다음 한 칸 띄고 찾을 문자열을 입력하시오")
+
 input_data = input().split()
 n = int(input_data[0])
 target = input_data[1]
