@@ -1,6 +1,5 @@
 n = int(input())
 size = []
-
 for i in range(n):
 
     distance = 0  # 북 = 0 서 = 1 남 = 2 동 = 3
