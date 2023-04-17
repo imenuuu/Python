@@ -9,7 +9,7 @@ for i in range(8):
     file.append(m[1])
 
 file_element = collections.Counter(file)
-
+#
 for key, value in sorted(list(file_element.items())):
     print(key+' '+str(value))
 
